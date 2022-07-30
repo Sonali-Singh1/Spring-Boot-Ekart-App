@@ -1,0 +1,12 @@
+2022-03-02 21:57:11 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION VARCHAR(255)": "'Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and com... (376)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCT"("ID","CATEGORY","DESCRIPTION","DISCOUNT","IMAGE","NO_OF_REVIEWS","PRICE","RATING","TITLE")VALUES(?,?,?,?,?,?,?,?,?) [22001-200]
+2022-03-02 21:57:11 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION VARCHAR(255)": "'Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and com... (376)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCT"("ID","CATEGORY","DESCRIPTION","DISCOUNT","IMAGE","NO_OF_REVIEWS","PRICE","RATING","TITLE")VALUES(?,?,?,?,?,?,?,?,?) [22001-200]
+2022-03-03 00:47:40 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (PRODUCT: ""DISCOUNT"" INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCT"("ID","CATEGORY","DESCRIPTION","DISCOUNT","IMAGE","NO_OF_REVIEWS","PRICE","RATING","TITLE")VALUES(?,?,?,?,?,?,?,?,?) [22018-200]
+2022-03-03 00:47:40 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (PRODUCT: ""DISCOUNT"" INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCT"("ID","CATEGORY","DESCRIPTION","DISCOUNT","IMAGE","NO_OF_REVIEWS","PRICE","RATING","TITLE")VALUES(?,?,?,?,?,?,?,?,?) [22018-200]

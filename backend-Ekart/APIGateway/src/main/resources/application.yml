@@ -1,0 +1,36 @@
+server:
+  port: 8989
+spring:
+  application:
+    name: Api-Gateway
+  cloud:
+    gateway:
+      routes:
+      - id: USERMS
+        uri: lb://USERMS
+        predicates:
+        - Path=/user/**
+        filters:
+        - name: CircuitBreaker
+          args:
+            name: USERMS
+            fallbackuri: forward:/userServiceFallback
+        
+      - id: ProductMS
+        uri: lb://ProductMS
+        predicates:
+        - Path=/product/**
+        filters:
+        - name: CircuitBreaker
+          args:
+            name: ProductMS
+            fallbackuri: forward:/productServiceFallback 
+      
+            
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+        
+
